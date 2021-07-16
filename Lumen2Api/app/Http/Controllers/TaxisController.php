@@ -12,7 +12,7 @@ class TaxisController extends Controller
     use ApiResponser;
 
     /**
-     * Create a new controller instance.
+     * crea una intancia del controlador
      *
      * @return void
      */

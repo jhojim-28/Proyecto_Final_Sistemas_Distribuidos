@@ -18,7 +18,7 @@ trait ApiResponser
     }
 
     /**
-     * Respuesta exitosa
+     * Respuesta erronea
      * @param  string $Mensaje
      * @param  int $code
      * @return Illuminate\Http\JsonResponse

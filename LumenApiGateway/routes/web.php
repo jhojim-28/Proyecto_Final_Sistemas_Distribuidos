@@ -4,8 +4,12 @@
 
 /*
 | Rutas del servicio
+*
 */
 
+/**
+ * referencia al grupo de rutas de client.credential para el proceso de autenticacion
+ */
 $router->group(['middleware'=>'client.credentials'], function() use($router){
 
 /**

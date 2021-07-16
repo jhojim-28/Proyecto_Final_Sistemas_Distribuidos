@@ -18,7 +18,7 @@ class Handler extends ExceptionHandler
 {
     use Apiresponser;
     /**
-     * A list of the exception types that should not be reported.
+     * Una lista de los tipos de excepciones que no se deben informar
      *
      * @var array
      */
@@ -30,7 +30,7 @@ class Handler extends ExceptionHandler
     ];
 
     /**
-     * Report or log an exception.
+     * Informar o registrar una excepción
      *
      * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
      *
@@ -45,7 +45,7 @@ class Handler extends ExceptionHandler
     }
 
     /**
-     * Render an exception into an HTTP response.
+     * Procese una excepción en una respuesta HTTP
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Throwable  $exception

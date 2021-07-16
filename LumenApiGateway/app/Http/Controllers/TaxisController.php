@@ -36,7 +36,7 @@ class TaxisController extends Controller
     }
 
     /**
-     * Retrieve and show all the Taxis
+     * Recuperar y mostrar todos los taxis
      * @return Illuminate\Http\Response
      */
     public function index()
@@ -45,7 +45,7 @@ class TaxisController extends Controller
     }
 
     /**
-     * Creates an instance of taxi
+     * Crea una instancia de taxi
      * @return Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -56,7 +56,7 @@ class TaxisController extends Controller
     }
 
     /**
-     * Obtain and show an instance of taxi
+     * Obtener y mostrar una instancia de taxi
      * @return Illuminate\Http\Response
      */
     public function show($taxis)
@@ -65,7 +65,7 @@ class TaxisController extends Controller
     }
 
     /**
-     * Updated an instance of taxi
+     * actualizar una instancia de taxi
      * @return Illuminate\Http\Response
      */
     public function update(Request $request, $taxis)
@@ -74,7 +74,7 @@ class TaxisController extends Controller
     }
 
     /**
-     * Removes an instance of taxi
+     * borrar una instancia de taxi
      * @return Illuminate\Http\Response
      */
     public function destroy($taxis)

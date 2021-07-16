@@ -51,7 +51,7 @@ class AuthorController extends Controller
     }
 
     /**
-     * Devolve un Author específico
+     * Devuelve un Author específico
      * @return Illuminate\Http\Response
      */
     public function show($author)

@@ -9,13 +9,13 @@ class AuthorService
     use ConsumesExternalService;
 
     /**
-     * El uri base que se utilizará para consumir el servicio de autores.
+     *  url base que se utilizará para consumir el servicio de autores.
      * @var string
      */
     public $baseUri;
 
     /**
-     * El secret que se utilizará para consumir el servicio del autor
+     * variable secret que se utilizará para consumir el servicio del autor
      * @var string
      */
     public $secret;
