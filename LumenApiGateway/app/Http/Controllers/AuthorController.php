@@ -12,13 +12,13 @@ class AuthorController extends Controller
     use ApiResponser;
 
     /**
-     * The service to consume the author service
+     * El servicio para consumir el servicio de autor
      * @var AuthorService
      */
     public $authorService;
 
     /**
-     * Create a new controller instance.
+     * Cree una nueva instancia de controlador.
      *
      * @return void
      */
@@ -28,7 +28,7 @@ class AuthorController extends Controller
     }
 
     /**
-     * Retrieve and show all the authors
+     * Recuperar y mostrar a todos los authors
      * @return Illuminate\Http\Response
      */
     public function index()
@@ -37,7 +37,7 @@ class AuthorController extends Controller
     }
 
     /**
-     * Creates an instance of author
+     * Crea una instancia de author
      * @return Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -46,7 +46,7 @@ class AuthorController extends Controller
     }
 
     /**
-     * Obtain and show an instance of author
+     * Obtener y mostrar una instancia de author
      * @return Illuminate\Http\Response
      */
     public function show($author)
@@ -55,7 +55,7 @@ class AuthorController extends Controller
     }
 
     /**
-     * Updated an instance of author
+     * Se actualizó una instancia de author
      * @return Illuminate\Http\Response
      */
     public function update(Request $request, $author)
@@ -64,7 +64,7 @@ class AuthorController extends Controller
     }
 
     /**
-     * Removes an instance of author
+     * Elimina una instancia de author
      * @return Illuminate\Http\Response
      */
     public function destroy($author)

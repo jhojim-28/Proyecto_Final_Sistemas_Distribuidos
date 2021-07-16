@@ -12,26 +12,16 @@ use Laravel\Lumen\Auth\Authorizable;
 class Author extends Model 
 {
     use HasFactory;
-    //use Authenticatable, Authorizable, HasFactory;
+    //Authenticatable, Authorizable, HasFactory;
 
     /**
-     * The attributes that are mass assignable.
-     *
+     * Atributos de Author
      * @var array
      */
-    protected $fillable = [//se puede crear todo de una sola vez
+    protected $fillable = [//Se puede crear todo de una sola vez
         'nombre',
         'ubicacion',
         'mpago',
-
     ];
 
-    /**
-     * The attributes excluded from the model's JSON form.
-     *
-     * @var array
-     */
-    //protected $hidden = [//atrivutos ocultos
-      //  'password',
-    //];
 }

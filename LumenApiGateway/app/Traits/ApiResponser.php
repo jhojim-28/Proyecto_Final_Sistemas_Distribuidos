@@ -7,8 +7,8 @@ use Illuminate\Http\Response;
 trait ApiResponser
 {
     /**
-     * Build a success response
-     * @param  string|array $data
+     * Respuesta exitosa
+     * @param  string|array $dato
      * @param  int $code
      * @return Illuminate\Http\Response
      */
@@ -18,7 +18,7 @@ trait ApiResponser
     }
 
     /**
-     * Build a valid response
+     * Respuesta valida
      * @param  string|array $data
      * @param  int $code
      * @return Illuminate\Http\JsonResponse
@@ -29,7 +29,7 @@ trait ApiResponser
     }
 
     /**
-     * Build error responses
+     * Respuesta erronea
      * @param  string $message
      * @param  int $code
      * @return Illuminate\Http\JsonResponse
@@ -40,7 +40,7 @@ trait ApiResponser
     }
 
     /**
-     * Return an error in JSON format
+     * Devuelve un error en formato JSON
      * @param  string $message
      * @param  int $code
      * @return Illuminate\Http\Response

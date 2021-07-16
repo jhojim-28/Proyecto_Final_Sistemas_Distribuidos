@@ -22,7 +22,7 @@ class TaxisController extends Controller
     }
 
     /**
-     * Return taxis list
+     * Retorna una lista de taxis
      * @return Illuminate\Http\Response
      */
     public function index()
@@ -33,7 +33,7 @@ class TaxisController extends Controller
     }
 
     /**
-     * Create an instance of Taxis
+     * Crea una instacia para Taxis
      * @return Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -53,7 +53,7 @@ class TaxisController extends Controller
     }
 
     /**
-     * Return an specific taxis
+     * Devolve un taxis específico 
      * @return Illuminate\Http\Response
      */
     public function show($taxis)
@@ -64,7 +64,7 @@ class TaxisController extends Controller
     }
 
     /**
-     * Update the information of an existing taxis
+     * Actuliza la infomacion del taxis existente 
      * @return Illuminate\Http\Response
      */
     public function update(Request $request, $taxis)
@@ -92,7 +92,7 @@ class TaxisController extends Controller
     }
 
     /**
-     * Removes an existing taxis
+     * Elimina a taxis existente 
      * @return Illuminate\Http\Response
      */
     public function destroy($taxis)

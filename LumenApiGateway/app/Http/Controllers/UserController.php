@@ -13,8 +13,7 @@ class UserController extends Controller
     use ApiResponser;
 
     /**
-     * Create a new controller instance.
-     *
+     * Cree una nueva instancia de controlador.
      * @return void
      */
     public function __construct()
@@ -23,7 +22,7 @@ class UserController extends Controller
     }
 
     /**
-     * Return users list
+     * Lista de usuarios de retorno
      * @return Illuminate\Http\Response
      */
     public function index()
@@ -34,7 +33,7 @@ class UserController extends Controller
     }
 
     /**
-     * Create an instance of User
+     * Crea una instancia de Usuario
      * @return Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -56,7 +55,7 @@ class UserController extends Controller
     }
 
     /**
-     * Return an specific user
+     * Devolver un usuario específico
      * @return Illuminate\Http\Response
      */
     public function show($user)
@@ -67,7 +66,7 @@ class UserController extends Controller
     }
 
     /**
-     * Update the information of an existing user
+     * Actualizar la información de un usuario existente
      * @return Illuminate\Http\Response
      */
     public function update(Request $request, $user)
@@ -98,7 +97,7 @@ class UserController extends Controller
     }
 
     /**
-     * Removes an existing user
+     * Elimina un usuario existente
      * @return Illuminate\Http\Response
      */
     public function destroy($user)
@@ -111,7 +110,7 @@ class UserController extends Controller
     }
 
     /**
-     * Identifies the curren user
+     * Identifica al usuario actual
      * @return Illuminate\Http\Response
      */
     public function me(Request $request)

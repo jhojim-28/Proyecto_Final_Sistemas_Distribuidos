@@ -9,13 +9,13 @@ class TaxisService
     use ConsumesExternalService;
 
     /**
-     * The base uri to be used to consume the taxis service
+     * El uri base que se utilizará para consumir el servicio de  taxis service
      * @var string
      */
     public $baseUri;
 
     /**
-     * The secret to be used to consume the taxis service
+     * El secret que se utilizará para consumir el servicio de taxis 
      * @var string
      */
     public $secret;
@@ -27,7 +27,7 @@ class TaxisService
     }
 
     /**
-     * Get the full list of taxis from the taxis service
+     * Obtiene la lista completa de los autores del servicio taxis
      * @return string
      */
     public function obtaintaxis()
@@ -36,7 +36,7 @@ class TaxisService
     }
 
     /**
-     * Create an instance of taxis using the taxis service
+     * Crea una instancia de autor utilizando el servicio de taxis service
      * @return string
      */
     public function createTaxis($data)
@@ -45,7 +45,7 @@ class TaxisService
     }
 
     /**
-     * Get a single taxis from the taxis service
+     * Obtiene un solo autor del servicio de taxis service
      * @return string
      */
     public function obtainTaxi($taxis)
@@ -54,7 +54,7 @@ class TaxisService
     }
 
     /**
-     * Edit a single taxis from the taxis service
+     * Edita un solo autor del servicio de taxis service
      * @return string
      */
     public function editTaxis($data, $taxis)
@@ -63,7 +63,7 @@ class TaxisService
     }
 
     /**
-     * Remove a single taxis from the taxis service
+     * Eliminar un solo autor del servicio de taxis service
      * @return string
      */
     public function deleteTaxis($taxis)

@@ -9,13 +9,13 @@ class AuthorService
     use ConsumesExternalService;
 
     /**
-     * The base uri to be used to consume the authors service
+     * El uri base que se utilizará para consumir el servicio de autores.
      * @var string
      */
     public $baseUri;
 
     /**
-     * The secret to be used to consume the authors service
+     * El secret que se utilizará para consumir el servicio del autor
      * @var string
      */
     public $secret;
@@ -27,7 +27,7 @@ class AuthorService
     }
 
     /**
-     * obtiene la lista completa de los autores del servicio autores
+     * Obtiene la lista completa de los autores del servicio autores
      * @return string
      */
     public function obtainAuthors()
@@ -36,7 +36,7 @@ class AuthorService
     }
 
     /**
-     * Create an instance of author using the authors service
+     * Crea una instancia de autor utilizando el servicio de autores
      * @return string
      */
     public function createAuthor($data)
@@ -45,7 +45,7 @@ class AuthorService
     }
 
     /**
-     * Get a single author from the authors service
+     * Obtiene un solo autor del servicio de autores
      * @return string
      */
     public function obtainAuthor($author)
@@ -54,7 +54,7 @@ class AuthorService
     }
 
     /**
-     * Edit a single author from the authors service
+     * Edita un solo autor del servicio de autores
      * @return string
      */
     public function editAuthor($data, $author)
@@ -63,7 +63,7 @@ class AuthorService
     }
 
     /**
-     * Remove a single author from the authors service
+     * Eliminar un solo autor del servicio de autores
      * @return string
      */
     public function deleteAuthor($author)

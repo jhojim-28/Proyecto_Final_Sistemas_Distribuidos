@@ -7,7 +7,7 @@ use GuzzleHttp\Client;
 trait ConsumesExternalService
 {
     /**
-     * Send a request to any service
+     * Envía una solicitud a cualquier servicio
      * @return string
      */
     public function performRequest($method, $requestUrl, $formParams = [], $headers = [])

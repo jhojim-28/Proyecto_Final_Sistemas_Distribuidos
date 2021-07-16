@@ -14,7 +14,7 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     use Authenticatable, Authorizable, HasFactory;
 
     /**
-     * The attributes that are mass assignable.
+     * Atributos del usuario
      *
      * @var array
      */
@@ -23,7 +23,7 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     ];
 
     /**
-     * The attributes excluded from the model's JSON form.
+     * Los atributos excluidos del formulario JSON del modelo.
      *
      * @var array
      */

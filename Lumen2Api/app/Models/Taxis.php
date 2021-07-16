@@ -14,8 +14,7 @@ class Taxis extends Model
     use HasFactory;
 
     /**
-     * The attributes that are mass assignable.
-     *
+     * Atributos de taxi
      * @var array
      */
     protected $fillable = [

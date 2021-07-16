@@ -12,7 +12,7 @@ class AuthorController extends Controller
     use ApiResponser;
 
     /**
-     * Create a new controller instance.
+     * Crea una nueva instancia de controlador
      *
      * @return void
      */
@@ -20,23 +20,23 @@ class AuthorController extends Controller
     {
         //
     }
-    public function index()//retorna la lista de Autores por medio de eloquent
+    public function index()//Retorna la lista de Autores por medio de eloquent
     {
         $authors = Author::all();
 
         return $this->successResponse($authors);
     }
-        /**
-     * Create an instance of Author
+    /**
+     * Crea una instancia de Author
      * @return Illuminate\Http\Response
      */
     /**
-     * Create an instance of Author
+     * Crea una instancia de Author
      * @return Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //reglas para los campos y en la peticion
+        //Reglas para los campos y en la peticion
         $rules = [
             'nombre' => 'required|max:255',
             'ubicacion' => 'required|max:255',
@@ -51,18 +51,18 @@ class AuthorController extends Controller
     }
 
     /**
-     * Return an specific author
+     * Devolve un Author específico
      * @return Illuminate\Http\Response
      */
     public function show($author)
     {
-        $author = Author::findOrFail($author);//recive id y dice si encuentra o no
+        $author = Author::findOrFail($author);//Recive id y dice si encuentra o no
 
         return $this->successResponse($author);
     }
 
     /**
-     * Update thej information of an existing author
+     * Actuliza la infomacion del Author existente
      * @return Illuminate\Http\Response
      */
     public function update(Request $request, $author)
@@ -90,7 +90,7 @@ class AuthorController extends Controller
     }
 
     /**
-     * Removes an existing author
+     * Elimina un author existente
      * @return Illuminate\Http\Response
      */
     public function destroy($author)

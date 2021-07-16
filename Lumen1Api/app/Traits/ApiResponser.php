@@ -2,14 +2,14 @@
 
 namespace App\Traits;
 
-use Illuminate\Http\Response;  //codigos de estado de http
+use Illuminate\Http\Response;  //Codigos de estado de http
 
 trait ApiResponser
 {
     /**
-     * Build a success response
-     * @param  string|array $data
-     * @param  int $code
+     * Respuesta exitosa
+     * @param  string|array $Dato
+     * @param  int $Code
      * @return Illuminate\Http\JsonResponse
      */
     public function successResponse($data, $code = Response::HTTP_OK)
@@ -18,9 +18,9 @@ trait ApiResponser
     }
 
     /**
-     * Build error responses
-     * @param  string $message
-     * @param  int $code
+     * Respuesta erronea 
+     * @param  string $Mensaje
+     * @param  int $Code
      * @return Illuminate\Http\JsonResponse
      */
     public function errorResponse($message, $code)
