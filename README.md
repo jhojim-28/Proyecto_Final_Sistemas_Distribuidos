@@ -6,21 +6,23 @@ En el siguiente Trabajo se realizo la implementacion de microservicios , el cual
 y es utilizado con composer un gestor de paquetes para php, adema de esto se utilizo el passpot de laravel para el servicio de autenticacion y guzzel para la comunicacion de http ya sean sicronas o asincronas
 y como base de datos sqlite para el guadrdado de datos asi mismo diferente commandos de composer como ser :
 
-
+//////////////////////Crear instancias de los servicios//////////////////////
 composer create-project laravel/lumen Lumen1Api
 composer create-project laravel/lumen Lumen2Api
 composer create-project laravel/lumen LumenGatewayApi
 
+//////////////////////crear y modificar base de datos//////////////////////
 php artisan make:migration CreateTaxisTables --create=taxis
 php artisan migrate
 php artisan db:seed
 php artisan migrate:fresh --seed
 
+//////////////////////habilitacion de los servidores locales para los servicios//////////////////////
 php -S localhost:8000 -t ./public           //Lumen1Api
 php -S localhost:8001 -t ./public           //Lumen2Api
 php -S localhost:8002 -t ./public           //LumenGatewayApi
 
-
+//////////////////////intalacion y creacion de clientes de laravel passport//////////////////////
 php artisan passport:install
 php artisan passport:client
 
