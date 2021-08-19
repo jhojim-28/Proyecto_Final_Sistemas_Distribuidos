@@ -1,4 +1,4 @@
-# Proyecto_Final_Sistemas_Distribuidos
+# Proyecto_Sistemas_Distribuidos
 Proyecto  de la materia sistemas de distribuidos.  I/2021
 
 
