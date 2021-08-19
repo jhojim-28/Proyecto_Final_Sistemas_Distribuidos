@@ -1,5 +1,5 @@
 # Proyecto_Final_Sistemas_Distribuidos
-Proyecto final de la materia sistemas de distribuidos. gestión I/2021
+Proyecto  de la materia sistemas de distribuidos.  I/2021
 
 
 En el siguiente Trabajo se realizo la implementacion de microservicios , el cual se utilizo las herramientas de lumen de laravel el cual es un micro-framework que trabaja con php 
